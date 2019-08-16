@@ -265,7 +265,7 @@ namespace ShipHunter {
 
                 if (cols - ship.shipLength < 0) {         //can't go left
                                                           //can go up or right
-                    if (PlaceOnDisplay(cols, rows, Direction.UP, Direction.RIGHT, ship) == true) {
+                    if (PlaceOnDisplay(cols, rows, Direction.RIGHT, Direction.UP, ship) == true) {
                         return true;
                     }
                     else {
@@ -276,7 +276,7 @@ namespace ShipHunter {
             else {                          //can go down
                 if (cols + ship.shipLength > 10) {        //can't go right
                                                           //can go down or left
-                    if (PlaceOnDisplay(cols, rows, Direction.DOWN, Direction.LEFT, ship) == true) {
+                    if (PlaceOnDisplay(cols, rows, Direction.LEFT, Direction.DOWN, ship) == true) {
                         return true;
                     }
                     else {

@@ -450,7 +450,7 @@ namespace ShipHunter {
                         sub_1.shipHealth -= 1;
                         if (sub_1.shipHealth == 0) {
                             UpdateDisplay();
-                            Console.WriteLine("Sub 2 was destroyed");
+                            Console.WriteLine("Submarine 1 was destroyed");
                             totalShips -= 1;
                             Console.ReadKey();
                         }
@@ -461,7 +461,7 @@ namespace ShipHunter {
                         sub_2.shipHealth -= 1;
                         if (sub_2.shipHealth == 0) {
                             UpdateDisplay();
-                            Console.WriteLine("Sub 2 was destroyed");
+                            Console.WriteLine("Submarine 2 was destroyed");
                             totalShips -= 1;
                             Console.WriteLine("There are {0} ships left.", totalShips);
                             Console.ReadKey();

@@ -30,19 +30,7 @@ namespace ShipHunter {
 
         public void UpdateDisplay() {
             if (this.hit == false) {
-
-                //remove this if statement later
-                if (this.isShipHere == false) {
-                    //display gray
-                    UpdateColor(ConsoleColor.Blue);
-                }
-                //UpdateColor(Console.BackgroundColor = ConsoleColor.Blue);//
-
-                /*only for now, debugging*/
-                if (this.isShipHere == true) {
-                    //display gray
-                    UpdateColor(ConsoleColor.DarkGreen);
-                }
+                UpdateColor(ConsoleColor.Blue);
             }
             else {
                 if (this.isShipHere == false) {
